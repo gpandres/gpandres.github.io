@@ -54,6 +54,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.74 seconds
 ![knifesearch](https://gpandres.github.io/assets/img/posts/knife/knifesearch.png)
 <https://www.exploit-db.com/exploits/49933>
 
+
 <h3 data-toc-skip>I copied the script and executed</h3>
 
 
@@ -103,7 +104,16 @@ Can't acess tty; job crontol turned off.
 $ whoami
 james
 ```
-<h3 data-toc-skip>We are in!</h3>
+<h3 data-toc-skip>We are in!, let's check the user flag.</h3>
+
+```console
+$ cat home/james/user.txt
+cb5ddfa28b84d6b930bca47d9bc984b6
+```
+
+<h3 data-toc-skip>Now we have to get access with root.</h3>
+
+
 
 
 
