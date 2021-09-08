@@ -42,7 +42,9 @@ Nmap done: 1 IP address (1 host up) scanned in 9.74 seconds
 
 ![knifeweb](https://gpandres.github.io/assets/img/posts/knifeweb.png)
 
-<h3 data-toc-skip>With [Wappalyzer](https://www.wappalyzer.com/), we can analyze this website to discover what is using.</h3>
+<h3 data-toc-skip>It's a hospital, but I don't found something important.</h3>
+
+<h3 data-toc-skip>With Wappalyzer we can discover what technologies is it using a website. </h3>
 
 
 
