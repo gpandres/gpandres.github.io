@@ -50,6 +50,16 @@ Nmap done: 1 IP address (1 host up) scanned in 9.74 seconds
 
 <h3 data-toc-skip>Alright, let's search for vulnerabilities for these technologies.</h3>
 
+![knifesearch](https://gpandres.github.io/assets/img/posts/knife/knifesearch.png)
+<https://www.exploit-db.com/exploits/49933>
+
+<h3 data-toc-skip>There's a vulnerability for PHP 8.1.0dev, we can gain access by changing the User-Agent in the browser, burpsuite or use the script</h3>
+
+
+
+
+
+
 
 
 
