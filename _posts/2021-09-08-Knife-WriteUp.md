@@ -113,6 +113,17 @@ cb5ddfa28b84d6b930bca47d9bc984b6
 
 <h3 data-toc-skip>Now we have to get access with root.</h3>
 
+<h3 data-toc-skip>Check if we can execute commands as root with james</h3>
+
+```console
+$ sudo -l
+Matching Defaults entries for james on knife:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User james may run the following commands on knife:
+    (root) NOPASSWD: /usr/bin/knife
+```
+
 
 
 
