@@ -2,18 +2,13 @@
 title: HTB - Knife
 author: gpandres
 date: 2021-09-08 20:00:00 +0800
-categories: [HTB, Writeups,Cybersecurity]
-tags: [htb,knife]
+categories: [Cybersecurity,HTB,WriteUps]
+tags: [HTB,Knife,PHP,GTFOBin,Backdoor]
 ---
 
 
 
-image:
-  src: /assets/img/posts/knife.jpeg
-  width: 1000   # in pixels
-  height: 400   # in pixels
-  alt: Knife
-
+![knifeimg](https://gpandres.github.io/assets/img/posts/knife.jpeg){: width="1086" height="542"}
 
 
 
