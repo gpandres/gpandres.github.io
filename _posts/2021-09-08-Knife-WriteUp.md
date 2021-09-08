@@ -11,7 +11,9 @@ tags: [HTB,Knife,PHP,GTFOBin,Backdoor]
 ![knifeimg](https://gpandres.github.io/assets/img/posts/knife.jpeg)
 
 
-<h3 data-toc-skip>Hello, we will start scanning ports with NMAP</h3>
+<h3 data-toc-skip>We will start scanning ports with NMAP</h3>
+
+
 ```console
 $ nmap -v 10.10.10.242
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-09-08 18:20 CEST
@@ -35,3 +37,8 @@ PORT   STATE SERVICE
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 9.74 seconds
 ```
+
+<h3 data-toc-skip>Looks like we have a web server and ssh service. Let's try see what is on the web</h3>
+
+![knifeweb](https://gpandres.github.io/assets/img/posts/knifeweb.png)
+
