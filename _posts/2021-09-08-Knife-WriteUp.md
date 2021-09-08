@@ -1,5 +1,5 @@
 ---
-title: HTB - Knife
+title: HTB - Knife (EN)
 author: gpandres
 date: 2021-09-08 20:00:00 +0800
 categories: [Cybersecurity,HTB,WriteUps]
@@ -38,7 +38,11 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 9.74 seconds
 ```
 
-<h3 data-toc-skip>Looks like we have a web server and ssh service. Let's try see what is on the web</h3>
+<h3 data-toc-skip>Looks like we have a web server and SSH service. Let's try to see what is on the web</h3>
 
 ![knifeweb](https://gpandres.github.io/assets/img/posts/knifeweb.png)
+
+<h3 data-toc-skip>With [Wappalyzer](https://www.wappalyzer.com/), we can analyze this website to discover what is using.</h3>
+
+
 
