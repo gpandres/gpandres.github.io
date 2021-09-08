@@ -11,7 +11,7 @@ tags: [HTB,Knife,PHP,GTFOBin,Backdoor]
 ![knifeimg](https://gpandres.github.io/assets/img/posts/knife/knife.jpeg)
 
 
-<h3 data-toc-skip>We will start scanning ports with NMAP</h3>
+<h3 data-toc-skip>We'll start scanning ports with NMAP.</h3>
 
 
 ```console
@@ -38,15 +38,18 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 9.74 seconds
 ```
 
-<h3 data-toc-skip>Looks like we have a web server and SSH service. Let's try to see what is on the web</h3>
+<h3 data-toc-skip>Looks like we have a web server and SSH service. Let's try to see what is on the web.</h3>
 
 ![knifeweb](https://gpandres.github.io/assets/img/posts/knife/knifeweb.png)
 
-<h3 data-toc-skip>It's a hospital, but I don't found something important on the web.</h3>
+<h3 data-toc-skip>It is a hospital, but I haven't found anything useful on the web.</h3>
 
-<h3 data-toc-skip>With Wappalyzer we can discover what technologies is it using a website. </h3>
+<h3 data-toc-skip>With Wappalyzer we can discover what technologies are used to create a website.</h3>
 
 ![knifewappalyzer](https://gpandres.github.io/assets/img/posts/knife/knifewappalyzer.png)
+
+<h3 data-toc-skip>Alright, let's search for vulnerabilities for these technologies.</h3>
+
 
 
 
