@@ -8,7 +8,7 @@ tags: [HTB,Knife,PHP,GTFOBin,Backdoor]
 
 
 
-![knifeimg](https://gpandres.github.io/assets/img/posts/knife.jpeg){: width="1086" height="542"}
+![knifeimg](https://gpandres.github.io/assets/img/posts/knife.jpeg)
 
 
 
